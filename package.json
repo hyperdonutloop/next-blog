@@ -5,10 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "populate:contentful": "contentful space migration --space-id 1x0q7pyn9kie utils/contentful.js --yes"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "contentful": "^7.14.0",
+    "dotenv-webpack": "^1.7.0",
     "next": "9.2.2",
     "react": "16.12.0",
     "react-dom": "16.12.0"
